@@ -1,7 +1,7 @@
-# -Bastos-Costa-Advocacia
+# Bastos-Costa-Advocacia
 
 
-**# -Bastos-Costa-Advocacia
+Bastos-Costa-Advocacia
 
 Este projeto consiste no desenvolvimento de um site moderno, responsivo e intuitivo, com foco em oferecer uma excelente experiência de navegação, acessibilidade e desempenho em diferentes dispositivos.
 
