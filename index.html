@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bastos &amp; Costa Advocacia – assessoria jurídica estratégica, preventiva e contenciosa para empresas e pessoas físicas." />
+    <meta name="theme-color" content="#123822" />
+    <title>Bastos &amp; Costa Advocacia</title>
+
+    <!-- Favicon: coloque o arquivo em assets/images/ -->
+    <link rel="icon" type="image/png" href="assets/images/logo-bastos-costa.png" />
+
+    <!-- Tipografia: Playfair Display (títulos) + Inter (textos e interface) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Ícones (sprite reutilizável com <use>) -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+      <symbol id="i-brief" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></symbol>
+      <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6.5v11M15 9.5c-.6-1-1.7-1.5-3-1.5-1.7 0-3 .9-3 2.2 0 3 6 1.6 6 4.4 0 1.3-1.3 2.2-3 2.2-1.4 0-2.5-.6-3-1.6"/></symbol>
+      <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M6 21h12M3 7h18M6 7l-3 8a3 3 0 0 0 6 0zM18 7l-3 8a3 3 0 0 0 6 0z"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="M22 4 12 14l-3-3"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l1.9-5.4A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol>
+    </svg>
+
+    <!-- ============================================================
+         HEADER
+    ============================================================ -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#hero" class="logo" aria-label="Bastos &amp; Costa Advocacia – Início">
+          <span class="logo__mark">BC</span>
+          <span class="logo__text">
+            <span class="logo__name">Bastos &amp; Costa</span>
+            <span class="logo__sub"><span class="logo__line"></span>ADVOCACIA<span class="logo__line"></span></span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Menu principal">
+          <ul class="nav__list">
+            <li><a href="#sobre" class="nav__link">Sobre</a></li>
+            <li><a href="#areas" class="nav__link">Áreas de Atuação</a></li>
+            <li><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
+            <li><a href="#socios" class="nav__link">Sócios</a></li>
+            <li><a href="#contato" class="nav__link nav__link--cta">Contato</a></li>
+          </ul>
+        </nav>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span>
+        </button>
+      </div>
+
+      <nav class="nav-mobile" id="mobileMenu" aria-label="Menu mobile" aria-hidden="true">
+        <ul class="nav-mobile__list">
+          <li><a href="#sobre" class="nav-mobile__link">Sobre</a></li>
+          <li><a href="#areas" class="nav-mobile__link">Áreas de Atuação</a></li>
+          <li><a href="#diferenciais" class="nav-mobile__link">Diferenciais</a></li>
+          <li><a href="#socios" class="nav-mobile__link">Sócios</a></li>
+          <li><a href="#contato" class="nav-mobile__link">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ============================================================
+           HERO
+      ============================================================ -->
+      <section class="hero" id="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="hero__eyebrow">Bastos &amp; Costa Advocacia</p>
+            <h1 class="hero__title">
+              Soluções jurídicas<br />
+              com visão estratégica<br />
+              e <em class="hero__title-accent">atendimento próximo.</em>
+            </h1>
+            <p class="hero__desc">
+              Assessoria preventiva e contenciosa para empresas e pessoas físicas que buscam segurança jurídica e soluções objetivas.
+            </p>
+            <div class="hero__actions">
+              <a href="#sobre" class="btn btn--primary">Conheça o Escritório</a>
+              <a href="#contato" class="btn btn--ghost">Fale Conosco</a>
+            </div>
+
+            <!-- AJUSTAR: contatos reais -->
+            <div class="hero__contacts">
+              <a href="https://wa.me/5527000000000?text=Olá,%20gostaria%20de%20um%20atendimento" target="_blank" rel="noopener noreferrer" class="hero__contact-link">
+                <svg class="icon hero__contact-icon"><use href="#i-chat" /></svg>
+                (27) 00000-0000
+              </a>
+              <a href="mailto:contato@exemplo.com.br" class="hero__contact-link">
+                <svg class="icon hero__contact-icon"><use href="#i-mail" /></svg>
+                contato@exemplo.com.br
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero__panel" aria-label="Áreas de atuação em destaque">
+            <img src="assets/images/logo-bastos-costa.png" alt="Logotipo Bastos &amp; Costa Advocacia" class="hero__logo" width="314" height="299" />
+            <p class="hero__panel-label">Áreas de Atuação</p>
+            <ul class="hero__panel-list">
+              <li><a href="#areas" class="hero__panel-item"><svg class="icon"><use href="#i-doc" /></svg><span>Consultoria e Contratos</span><svg class="icon arrow"><use href="#i-arrow" /></svg></a></li>
+              <li><a href="#areas" class="hero__panel-item"><svg class="icon"><use href="#i-coin" /></svg><span>Cobranças e Recuperação de Crédito</span><svg class="icon arrow"><use href="#i-arrow" /></svg></a></li>
+              <li><a href="#areas" class="hero__panel-item"><svg class="icon"><use href="#i-scale" /></svg><span>Contencioso Estratégico</span><svg class="icon arrow"><use href="#i-arrow" /></svg></a></li>
+              <li><a href="#areas" class="hero__panel-item"><svg class="icon"><use href="#i-users" /></svg><span>Direito do Trabalho</span><svg class="icon arrow"><use href="#i-arrow" /></svg></a></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="hero__bar" aria-hidden="true"></div>
+      </section>
+
+      <!-- ============================================================
+           SOBRE  (AJUSTAR textos com o briefing do escritório)
+      ============================================================ -->
+      <section class="sobre" id="sobre">
+        <div class="container sobre__inner">
+          <div class="sobre__text">
+            <span class="section-tag">Quem Somos</span>
+            <h2 class="section-title">Técnica, estratégia e proximidade em cada demanda</h2>
+            <p>A Bastos &amp; Costa Advocacia presta assessoria jurídica estratégica, preventiva e contenciosa, com atendimento personalizado para empresas e pessoas físicas.</p>
+            <p>Nosso compromisso é transformar questões jurídicas em soluções eficientes, reduzindo riscos e protegendo interesses patrimoniais, empresariais e contratuais.</p>
+            <p>[Inserir história do escritório, ano de fundação e cidade de atuação.]</p>
+          </div>
+
+          <div class="sobre__attrs">
+            <div class="attr-card">
+              <svg class="icon"><use href="#i-shield" /></svg>
+              <h3>Segurança</h3>
+              <p>Proteção jurídica em cada decisão do cliente.</p>
+            </div>
+            <div class="attr-card">
+              <svg class="icon"><use href="#i-brief" /></svg>
+              <h3>Solidez</h3>
+              <p>Base técnica robusta e atualização constante.</p>
+            </div>
+            <div class="attr-card">
+              <svg class="icon"><use href="#i-user" /></svg>
+              <h3>Proximidade</h3>
+              <p>Atendimento direto, personalizado e comprometido.</p>
+            </div>
+            <div class="attr-card">
+              <svg class="icon"><use href="#i-check" /></svg>
+              <h3>Clareza</h3>
+              <p>Linguagem objetiva e acompanhamento transparente.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           ÁREAS DE ATUAÇÃO  (AJUSTAR com as áreas reais)
+      ============================================================ -->
+      <section class="areas" id="areas">
+        <div class="container">
+          <div class="areas__header">
+            <span class="section-tag section-tag--light">O que fazemos</span>
+            <h2 class="section-title section-title--light">Áreas de Atuação</h2>
+            <p class="areas__subtitle">
+              Combinamos precisão técnica e visão de negócio para entregar soluções jurídicas que protegem e impulsionam os interesses de cada cliente.
+            </p>
+          </div>
+
+          <div class="areas__grid">
+            <article class="area-card">
+              <div class="area-card__num">01</div>
+              <div class="area-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-doc" /></svg></div>
+              <h3 class="area-card__title">Consultoria e Contratos</h3>
+              <p class="area-card__desc">Elaboração, análise e revisão de contratos.<br />Estruturação de instrumentos jurídicos.<br />Consultoria preventiva.</p>
+              <a href="https://wa.me/5527000000000?text=Olá! Gostaria de mais informações sobre Consultoria e Contratos." class="area-card__link" target="_blank" rel="noopener">Saiba mais →</a>
+            </article>
+
+            <article class="area-card">
+              <div class="area-card__num">02</div>
+              <div class="area-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-coin" /></svg></div>
+              <h3 class="area-card__title">Cobranças e Recuperação de Crédito</h3>
+              <p class="area-card__desc">Cobranças judiciais e extrajudiciais.<br />Renegociação de dívidas.<br />Defesa em execuções.</p>
+              <a href="https://wa.me/5527000000000?text=Olá! Gostaria de mais informações sobre Cobranças e Recuperação de Crédito." class="area-card__link" target="_blank" rel="noopener">Saiba mais →</a>
+            </article>
+
+            <article class="area-card">
+              <div class="area-card__num">03</div>
+              <div class="area-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-scale" /></svg></div>
+              <h3 class="area-card__title">Contencioso Estratégico</h3>
+              <p class="area-card__desc">Atuação em ações cíveis e empresariais.<br />Demandas de Direito do Consumidor.</p>
+              <a href="https://wa.me/5527000000000?text=Olá! Gostaria de mais informações sobre Contencioso Estratégico." class="area-card__link" target="_blank" rel="noopener">Saiba mais →</a>
+            </article>
+
+            <article class="area-card">
+              <div class="area-card__num">04</div>
+              <div class="area-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-users" /></svg></div>
+              <h3 class="area-card__title">Direito do Trabalho</h3>
+              <p class="area-card__desc">Consultoria trabalhista preventiva.<br />Gestão de riscos trabalhistas.<br />Atuação em processos judiciais.</p>
+              <a href="https://wa.me/5527000000000?text=Olá! Gostaria de mais informações sobre Direito do Trabalho." class="area-card__link" target="_blank" rel="noopener">Saiba mais →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           DIFERENCIAIS
+      ============================================================ -->
+      <section class="diferenciais" id="diferenciais">
+        <div class="container">
+          <span class="section-tag">Por que nos escolher</span>
+          <h2 class="section-title">Nossos Diferenciais</h2>
+
+          <div class="diff-grid">
+            <div class="diff-item">
+              <div class="diff-item__icon" aria-hidden="true"><svg class="icon"><use href="#i-user" /></svg></div>
+              <div class="diff-item__text">
+                <h3>Atendimento Próximo e Personalizado</h3>
+                <p>Cada cliente recebe atenção dedicada, com soluções construídas para sua realidade.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <div class="diff-item__icon" aria-hidden="true"><svg class="icon"><use href="#i-shield" /></svg></div>
+              <div class="diff-item__text">
+                <h3>Atuação Estratégica e Preventiva</h3>
+                <p>Antecipamos riscos para proteger seus interesses antes que os problemas surjam.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <div class="diff-item__icon" aria-hidden="true"><svg class="icon"><use href="#i-clock" /></svg></div>
+              <div class="diff-item__text">
+                <h3>Agilidade na Condução das Demandas</h3>
+                <p>Respostas rápidas e condução eficiente de cada etapa, respeitando prazos e prioridades.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <div class="diff-item__icon" aria-hidden="true"><svg class="icon"><use href="#i-check" /></svg></div>
+              <div class="diff-item__text">
+                <h3>Segurança Jurídica</h3>
+                <p>Proteção patrimonial e contratual em cada decisão tomada.</p>
+              </div>
+            </div>
+            <div class="diff-item diff-item--wide">
+              <div class="diff-item__icon" aria-hidden="true"><svg class="icon"><use href="#i-mail" /></svg></div>
+              <div class="diff-item__text">
+                <h3>Comunicação Clara</h3>
+                <p>Linguagem objetiva e acompanhamento transparente, para que o cliente entenda cada passo do seu caso.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SÓCIOS  (AJUSTAR: nomes, OAB, fotos e mini biografias)
+           Foto: salve em assets/images/socio-1.jpg e socio-2.jpg
+      ============================================================ -->
+      <section class="socios" id="socios">
+        <div class="container">
+          <span class="section-tag">Nossa equipe</span>
+          <h2 class="section-title">Sócios</h2>
+
+          <div class="socios__grid">
+            <article class="socio">
+              <div class="socio__image"><img src="assets/images/socio-1.jpg" alt="[Nome do sócio]" onerror="this.remove()" /></div>
+              <div class="socio__content">
+                <h3 class="socio__name">[Nome do sócio]</h3>
+                <p class="socio__cargo">Advogado • OAB/UF nº [0000]</p>
+                <p>[Mini biografia: formação, áreas de especialização e experiência, em 3 a 5 linhas.]</p>
+              </div>
+            </article>
+            <article class="socio">
+              <div class="socio__image"><img src="assets/images/socio-2.jpg" alt="[Nome do sócio]" onerror="this.remove()" /></div>
+              <div class="socio__content">
+                <h3 class="socio__name">[Nome do sócio]</h3>
+                <p class="socio__cargo">Advogado(a) • OAB/UF nº [0000]</p>
+                <p>[Mini biografia: formação, áreas de especialização e experiência, em 3 a 5 linhas.]</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           CONTATO
+      ============================================================ -->
+      <section class="contato" id="contato">
+        <div class="container contato__inner">
+          <div class="contato__info">
+            <span class="section-tag section-tag--light">Fale Conosco</span>
+            <h2 class="section-title section-title--light">Entre em Contato</h2>
+            <p>Conte brevemente sua demanda e retornaremos para agendar sua consulta, com agilidade e comprometimento.</p>
+
+            <div class="contato__details">
+              <a href="https://wa.me/5527000000000?text=Olá,%20gostaria%20de%20um%20atendimento" target="_blank" rel="noopener noreferrer" class="contato__item">
+                <div class="contato__item-icon"><svg class="icon"><use href="#i-chat" /></svg></div>
+                <div><span class="contato__item-label">WhatsApp</span><span class="contato__item-value">(27) 00000-0000</span></div>
+              </a>
+              <a href="mailto:contato@exemplo.com.br" class="contato__item">
+                <div class="contato__item-icon"><svg class="icon"><use href="#i-mail" /></svg></div>
+                <div><span class="contato__item-label">E-mail</span><span class="contato__item-value">contato@exemplo.com.br</span></div>
+              </a>
+              <div class="contato__item">
+                <div class="contato__item-icon"><svg class="icon"><use href="#i-clock" /></svg></div>
+                <div><span class="contato__item-label">Endereço e horário</span><span class="contato__item-value">[Rua, número, bairro, cidade/UF]<br />[Segunda a sexta, 9h às 18h]</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contato__form-wrapper">
+            <form class="form" id="contactForm" novalidate aria-label="Formulário de contato">
+              <div class="form__group">
+                <label class="form__label" for="nome">Nome completo <span aria-hidden="true">*</span></label>
+                <input class="form__input" type="text" id="nome" name="nome" placeholder="Seu nome completo" required autocomplete="name" />
+                <span class="form__error" id="nome-error" role="alert"></span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">E-mail <span aria-hidden="true">*</span></label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required autocomplete="email" />
+                <span class="form__error" id="email-error" role="alert"></span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="telefone">Telefone / WhatsApp</label>
+                <input class="form__input" type="tel" id="telefone" name="telefone" placeholder="(27) 00000-0000" autocomplete="tel" />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="assunto">Área de interesse <span aria-hidden="true">*</span></label>
+                <select class="form__input" id="assunto" name="assunto" required>
+                  <option value="" disabled selected>Selecione uma área</option>
+                  <option>Consultoria e Contratos</option>
+                  <option>Cobranças e Recuperação de Crédito</option>
+                  <option>Contencioso Estratégico</option>
+                  <option>Direito do Trabalho</option>
+                  <option>Outro assunto</option>
+                </select>
+                <span class="form__error" id="assunto-error" role="alert"></span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="mensagem">Mensagem <span aria-hidden="true">*</span></label>
+                <textarea class="form__input form__textarea" id="mensagem" name="mensagem" rows="4" placeholder="Descreva brevemente sua demanda..." required></textarea>
+                <span class="form__error" id="mensagem-error" role="alert"></span>
+              </div>
+              <div class="form__group form__group--check">
+                <label class="form__check"><input type="checkbox" id="lgpd" name="lgpd" required /> Concordo com o uso dos meus dados para contato, conforme a LGPD.</label>
+                <span class="form__error" id="lgpd-error" role="alert"></span>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">Enviar Mensagem</button>
+              <div class="form__feedback" id="formFeedback" aria-live="polite" aria-atomic="true"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo-name">Bastos &amp; Costa</span>
+          <span class="footer__logo-sub">— ADVOCACIA —</span>
+          <p class="footer__tagline">Solidez para proteger.<br />Estratégia para decidir.<br />Proximidade para acompanhar.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Links do rodapé">
+          <h4 class="footer__nav-title">Áreas de Atuação</h4>
+          <ul class="footer__nav-list">
+            <li><a href="#areas" class="footer__link">Consultoria e Contratos</a></li>
+            <li><a href="#areas" class="footer__link">Cobranças e Recuperação de Crédito</a></li>
+            <li><a href="#areas" class="footer__link">Contencioso Estratégico</a></li>
+            <li><a href="#areas" class="footer__link">Direito do Trabalho</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact">
+          <h4 class="footer__nav-title">Contato</h4>
+          <a href="https://wa.me/5527000000000" target="_blank" rel="noopener noreferrer" class="footer__link">(27) 00000-0000</a>
+          <a href="mailto:contato@exemplo.com.br" class="footer__link">contato@exemplo.com.br</a>
+          <p class="footer__addr">[Endereço do escritório]</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          <p class="footer__copy">&copy; <span id="currentYear"></span> Bastos &amp; Costa Advocacia. Todos os direitos reservados. [OAB/UF nº 0000]</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo" aria-hidden="true" tabindex="-1">
+      <svg class="icon"><use href="#i-up" /></svg>
+    </button>
+
+    <!-- EmailJS (opcional, para envio do formulário por e-mail). Veja js/script.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
