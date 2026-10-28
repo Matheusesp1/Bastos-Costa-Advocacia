@@ -9,7 +9,7 @@
      e preencha as 3 chaves abaixo. O template pode usar: {{nome}}, {{email}}, {{telefone}}, {{assunto}}, {{mensagem}}.
      Opção B: deixe vazio. O formulário abre o WhatsApp do escritório com a mensagem pronta. */
   const EMAILJS = { publicKey: "", serviceId: "", templateId: "" };
-  const WHATSAPP = "5527000000000"; // AJUSTAR: DDI + DDD + número
+  const WHATSAPP = "552799934-1196"; // AJUSTAR: DDI + DDD + número
 
   const $ = (s, c = document) => c.querySelector(s);
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
