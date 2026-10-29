@@ -856,16 +856,21 @@ a.contato__item:hover .contato__item-value {
     grid-column: auto;
   }
 }
-@media (max-width: 560px) {
-  .sobre__attrs {
+@media (max-width: 768px) {
+  .socios__grid {
     grid-template-columns: 1fr;
   }
+
   .socio {
-    grid-template-columns: 110px 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 1.25rem;
   }
-  .hero__panel,
-  .form {
-    padding: 1.5rem;
+
+  .socio__image {
+    width: 220px;
+    max-width: 100%;
   }
 }
 @media (prefers-reduced-motion: reduce) {
