@@ -3,21 +3,37 @@
    Paleta: verde (logotipo), cinza e branco
    Tipografia: Playfair Display (títulos) + Inter (texto)
    ============================================================ */
+
+
 :root {
-  --green: #123822;
-  --green-2: #1b4a31;
-  --green-3: #0d2a1a;
-  --sage: #a9bbaf;
-  --gray: #5b6560;
-  --line: #d9deda;
-  --mist: #eef0ee;
-  --white: #fafaf8;
-  --ink: #1b2a22;
+  /* Cor secundária: verde */
+  --green: #203026;
+  --green-2: #2b3b30;
+  --green-3: #203527;
+
+  /* Neutros premium */
+  --sage: #B9B9AD;
+  --gray: #777970;
+  --line: #DCD8D0;
+  --mist: #EAE6DE;
+  --white: #F6F3ED;
+  --ink: #202321;
+
+  /* Detalhes sofisticados */
+  --accent: #B69A6B;
+  --accent-2: #64665E;
+
+  /* Tipografia */
   --serif: "Playfair Display", Georgia, serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --sans: "Inter", system-ui, -apple-system,
+          "Segoe UI", Arial, sans-serif;
+
+  /* Layout */
   --header-h: 76px;
   --radius: 6px;
 }
+
+
 
 *,
 *::before,
