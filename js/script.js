@@ -8,8 +8,13 @@
      Opção A (recomendada): EmailJS – crie conta em emailjs.com, crie um serviço e um template
      e preencha as 3 chaves abaixo. O template pode usar: {{nome}}, {{email}}, {{telefone}}, {{assunto}}, {{mensagem}}.
      Opção B: deixe vazio. O formulário abre o WhatsApp do escritório com a mensagem pronta. */
-  const EMAILJS = { publicKey: "", serviceId: "", templateId: "" };
-  const WHATSAPP = "552799934-1196"; // AJUSTAR: DDI + DDD + número
+  const EMAILJS = {
+    publicKey: "0UpraUhT7mPKUtAG8",
+    serviceId: "service_zubg9yo",
+    templateId: "template_8zrf249",
+  };
+
+  const WHATSAPP = "5527999341196"; // AJUSTAR: DDI + DDD + número
 
   const $ = (s, c = document) => c.querySelector(s);
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
