@@ -421,7 +421,7 @@ p {
 }
 .sobre__attrs {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.25rem;
 }
 .attr-card {
@@ -861,7 +861,7 @@ a.contato__item:hover .contato__item-value {
   .contato__inner,
   .footer__inner {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
   }
   .areas__grid,
   .diff-grid,
