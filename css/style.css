@@ -4,7 +4,6 @@
    Tipografia: Playfair Display (títulos) + Inter (texto)
    ============================================================ */
 
-
 :root {
   /* Cor secundária: verde */
   --green: #203026;
@@ -12,28 +11,25 @@
   --green-3: #203527;
 
   /* Neutros premium */
-  --sage: #B9B9AD;
+  --sage: #b9b9ad;
   --gray: #777970;
-  --line: #DCD8D0;
-  --mist: #EAE6DE;
-  --white: #F6F3ED;
+  --line: #dcd8d0;
+  --mist: #eae6de;
+  --white: #f6f3ed;
   --ink: #202321;
 
   /* Detalhes sofisticados */
-  --accent: #B69A6B;
-  --accent-2: #64665E;
+  --accent: #b69a6b;
+  --accent-2: #64665e;
 
   /* Tipografia */
   --serif: "Playfair Display", Georgia, serif;
-  --sans: "Inter", system-ui, -apple-system,
-          "Segoe UI", Arial, sans-serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 
   /* Layout */
   --header-h: 76px;
   --radius: 6px;
 }
-
-
 
 *,
 *::before,
@@ -418,11 +414,15 @@ p {
   color: var(--gray);
   font-size: 1.05rem;
   max-width: 60ch;
+  text-align: justify;
+  hyphens: auto;
 }
 .sobre__attrs {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.25rem;
+  text-align: justify;
+  hyphens: auto;
 }
 .attr-card {
   background: var(--mist);
@@ -572,7 +572,7 @@ p {
 }
 .socio__image {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 2.9/ 5;
   background: var(--green);
   border-radius: var(--radius);
   overflow: hidden;
@@ -586,11 +586,12 @@ p {
   color: var(--sage);
 }
 .socio__image img {
-  position: center 15%;
+  position: center 30%;
   inset: 0;
-  width: 100%;
+  width: 150%;
   height: 100%;
   object-fit: cover;
+  aspect-ratio: 2.9/ 5;
 }
 .socio__name {
   font-size: 1.5rem;
