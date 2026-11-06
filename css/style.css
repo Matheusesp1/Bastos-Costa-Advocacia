@@ -901,4 +901,18 @@ a.contato__item:hover .contato__item-value {
   * {
     transition-duration: 0.01ms !important;
   }
+
+  /* incone zap */
+  .btn--wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn--wa svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
 }
