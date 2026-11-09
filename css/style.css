@@ -903,7 +903,7 @@ a.contato__item:hover .contato__item-value {
   }
 
   /* incone zap */
-  .btn--wa {
+  /* .btn--wa {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -914,5 +914,5 @@ a.contato__item:hover .contato__item-value {
   height: 20px;
   fill: currentColor;
   flex-shrink: 0;
-}
+} */
 }
